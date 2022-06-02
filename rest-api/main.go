@@ -7,7 +7,7 @@ import (
 
 func main() {
 
-	p, err := kafka.NewProducer(&kafka.ConfigMap{"bootstrap.servers": "localhost"})
+	p, err := kafka.NewProducer(&kafka.ConfigMap{"bootstrap.servers": "kafka1:19092"})
 	if err != nil {
 		panic(err)
 	}
@@ -36,7 +36,7 @@ func main() {
 		return c.SendString("Nur Selam 👋!")
 	})
 
-	app.Listen(":3000")
+	app.Listen(":3003")
 
 	// Wait for message deliveries before shutting down
 	p.Flush(15 * 1000)
