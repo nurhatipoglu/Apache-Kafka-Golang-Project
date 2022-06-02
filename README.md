@@ -44,7 +44,7 @@ docker-compose up -d
 
 ---
 
-Postman den aşağıdaki yapıda; http://localhost:3000/ adresine post isteği atıldığında consumer ın konsola atılan mesajı yazdırdığını görürüz.
+Postman den aşağıdaki yapıda; http://localhost:3003/ adresine post isteği atıldığında consumer ın konsola atılan mesajı yazdırdığını görürüz.
 
 ```javascript
 {
